@@ -71,35 +71,79 @@
 
 //
 
-var expr = "Papayas";
+// var expr = "Papayas";
 
-if(expr == "Oranges"){
-    console.log("Oranges are 59cents a lb.")
-}
-else if(expr == "Mangos"){
-    console.log("Mangos")
-}
-else if(expr == "Papayas"){
-    console.log("Papayas and mangos are 2.79 a lb.")
-}
-else{
-    console.log("sorry we are out of " + expr + ".")
-};
+// if(expr == "Oranges"){
+//     console.log("Oranges are 59cents a lb.")
+// }
+// else if(expr == "Mangos"){
+//     console.log("Mangos")
+// }
+// else if(expr == "Papayas"){
+//     console.log("Papayas and mangos are 2.79 a lb.")
+// }
+// else{
+//     console.log("sorry we are out of " + expr + ".")
+// };
 
 
-var expr = "Papayas";
+// var expr = "Papayas";
 
-switch(expr){
-    case "Oranges":
-        console.log("Oranges are 59cents a lb.")
-        break;
-    case "Mangos":
-        console.log("Mangos")
-        break;
-    case "Papayas":
-        console.log("Papayas and mangos are 2.79 a lb.")
-        break;
-    default:
-        console.log("sorry we are out of " + expr + ".")
-        break;
-}
+// switch(expr){
+//     case "Oranges":
+//         console.log("Oranges are 59cents a lb.")
+//         break;
+//     case "Mangos":
+//         console.log("Mangos")
+//         break;
+//     case "Papayas":
+//         console.log("Papayas and mangos are 2.79 a lb.")
+//         break;
+//     default:
+//         console.log("sorry we are out of " + expr + ".")
+//         break;
+// }
+
+// var count = 0;
+
+// while (count < 10) {
+//     console.log(count);
+//     // count = count + 1;
+//     count++;
+// };
+
+// for(var count = 0; count < 10; count++){
+    
+//     console.log(count);
+
+//     for(var inner = 0; inner < 3; inner++){
+        
+//         console.log(inner);
+//     }
+// };
+
+// var lottoNum = [];
+
+// lottoNum.push(3);
+
+// console.log(lottoNum);
+
+// lottoNum.push(34);
+
+// console.log(lottoNum);
+
+// // [3, 34]
+
+// lottoNum.pop();
+
+// console.log(lottoNum);
+
+
+var lottoNums = [23, 11, 43, 19, 37, 16];
+
+var newNum = lottoNums.splice(2, 3);
+
+console.log(lottoNums);
+console.log(newNum);
+
+// console.log(lottoNums[2]);

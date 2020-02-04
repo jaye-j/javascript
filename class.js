@@ -49,16 +49,57 @@
 // var equals = true == false; //false  == = equals
 // console.log(equals);
 
-var a = 4;
-var b = 4;
+// var a = 4;
+// var b = 4;
 
-if(a == b){
-    console.log("equality")
+// if (a == b) {
+//     console.log("equality")
+// };
+
+
+// var age = 18;
+
+// if (age >= 21) {
+//     console.log('you get free beer.')
+// }
+// else if (age < 18) {
+//     console.log('what are you even doing here.')
+// }
+// else {
+//     console.log('sorry no beer for you.')
+// };
+
+//
+
+var expr = "Papayas";
+
+if(expr == "Oranges"){
+    console.log("Oranges are 59cents a lb.")
+}
+else if(expr == "Mangos"){
+    console.log("Mangos")
+}
+else if(expr == "Papayas"){
+    console.log("Papayas and mangos are 2.79 a lb.")
+}
+else{
+    console.log("sorry we are out of " + expr + ".")
 };
 
 
-var age = 21;
+var expr = "Papayas";
 
-if(age >= 21){
-    console.log('you get free beer.')
-};
+switch(expr){
+    case "Oranges":
+        console.log("Oranges are 59cents a lb.")
+        break;
+    case "Mangos":
+        console.log("Mangos")
+        break;
+    case "Papayas":
+        console.log("Papayas and mangos are 2.79 a lb.")
+        break;
+    default:
+        console.log("sorry we are out of " + expr + ".")
+        break;
+}

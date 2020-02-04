@@ -1,5 +1,5 @@
 
-function madLib(name, subject){
+function madLib(name, subject) {
     return console.log(name + "'s favorite subject is " + subject + ".")
 };
 

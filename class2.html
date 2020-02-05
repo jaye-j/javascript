@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    
+    .hello{
+        width: 100%;
+        background-color: coral;
+        min-height: 100px;
+    }
+    .goodbye{
+        width: 100%;
+        background-color: cornflowerblue;
+        min-height: 100px;
+    }
+    
+    </style>
+</head>
+<body>
+    <img src="https://images-na.ssl-images-amazon.com/images/I/81-yKbVND-L.png">
+    <img src="https://images-na.ssl-images-amazon.com/images/I/61ecEb8x2mL._SL1000_.jpg">
+
+    <div id="myfirstid">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque consequuntur numquam iure obcaecati modi amet sequi, fuga dignissimos. Nam culpa est tenetur nulla iusto quis perspiciatis dolores, nostrum vitae sequi!
+    </div>
+    <div class="hello"> uh oh stinky</div>
+    <div class="goodbye"></div>
+    <div class="hello"></div>
+    <div class="goodbye"></div>
+    <div class="hello"></div>
+    <div class="goodbye"></div>
+    <div class="hello"></div>
+
+    <script>
+
+// var element = document.createElement('h1');
+
+// element.textContent = "Hello World";
+
+// var body = document.querySelector('body');
+
+// body.append(element);
+
+//////////////
+
+// var h1 = document.createElement('h1');
+
+// h1.textContent = "Hello World";
+
+// var helloDiv = document.querySelectorAll(".hello");
+
+// helloDiv[1].append(h1);
+
+//////////////
+
+var divNode = document.getElementById("myfirstid");
+
+document.body.removeChild(divNode);
+
+/////////////////////
+
+        // var imgArray = document.getElementsByTagName('img');
+        // imgArray[0].setAttribute('src', 'https://i.scdn.co/image/e6e8dc2276867c39387046e8c4f73c27c4211bcc');
+            
+        // console.log(imgArray);
+        // console.log(imgArray[0]);
+
+        // var src = imgArray[1].getAttribute("src");
+        // console.log(src)
+
+        // var divArray = document.getElementsByClassName("hello");
+
+        // console.log(divArray);
+        // divArray[0].textContent = "uh oh stinke"
+
+        // console.log(divArray.length)
+
+        // divArray[1].innerHTML = "le monke"
+
+    </script>
+</body>
+</html>

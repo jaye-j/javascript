@@ -46,6 +46,7 @@ function joinNumsOnOperationDiv(){
     numToBeDiv.push(joinedNum);
     numStorage = [];
 }
+function
 
 buttons.addEventListener('click', function(e){
 

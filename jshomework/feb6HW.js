@@ -152,14 +152,16 @@
 
 //12. sum an array
 
-var numbers = [175, 50, 25, 1];
+// var numbers = [175, 50, 25, 1];
 
-var sum = numbers.reduce(function(num1, num2){
-    return num1 + num2;
-});
+// var sum = numbers.reduce(function(num1, num2){
+//     return num1 + num2;
+// });
 
-console.log(sum);
+// console.log(sum);
 
 
 
 //13. Acronym
+
+let arrAcronym = ['oh', 'my', 'god'];

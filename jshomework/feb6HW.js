@@ -150,7 +150,7 @@
 // callNTimes(5, hello);
 
 
-//12. sum an array
+// 12. sum an array
 
 // var numbers = [175, 50, 25, 1];
 
@@ -165,3 +165,13 @@
 //13. Acronym
 
 let arrAcronym = ['oh', 'my', 'god'];
+
+function addLetter(fletter, word) {
+    return fletter + word[0].toUpperCase();
+};
+
+function acronym(arrAcronym) {
+    return arrAcronym.reduce(addLetter, '');
+};
+
+console.log(acronym(arrAcronym));

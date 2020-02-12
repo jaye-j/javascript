@@ -54,7 +54,7 @@
 // console.log(cityTemp);
 
 
-//5. Cities 2
+// // 5. Cities 2
 
 // var cities = [
 //     { name: 'Los Angeles', temperature: 60.0},

@@ -1,4 +1,4 @@
-function longVowels(text){
+let = longVowels = (text) => {
     const looongtext = text
     .replace(/aa/gi, 'aaaaa')
     .replace(/ee/gi, 'eeeee')

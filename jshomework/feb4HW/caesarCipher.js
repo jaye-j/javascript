@@ -1,4 +1,4 @@
-function caeserDecipher (message, shift) {
+let = caeserDecipher = (message, shift) => {
 
     message = message.toLowerCase();
     var array = message.split(" ");

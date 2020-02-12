@@ -1,5 +1,5 @@
 
-function caeserCipher (message, shift) {
+let = caeserCipher = (message, shift) => {
 
     message = message.toLowerCase();
     var array = message.split(" ");

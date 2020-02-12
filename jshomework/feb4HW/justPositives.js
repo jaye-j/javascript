@@ -1,5 +1,5 @@
 
-function positiveNumbers(array) {
+let = positiveNumbers = (array) => {
     newArray = array.sort();
     while (true) {
         if (newArray[0] < 0) {

@@ -1,5 +1,5 @@
 
-function leetSpeak(text){
+let = leetSpeak = (text) => {
     const leettext = text
     .toUpperCase()
     .replace(/a/gi, 4)

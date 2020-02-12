@@ -413,9 +413,19 @@ let a = 4;
 
 // // console.log(result);
 
-let pattern = /\s\s/g;
-let str = "this is a veryyyyyyy long day";
+// let pattern = /\s\s/g;
+// let str = "this is a veryyyyyyy long day";
 
-let result = str.replace(pattern, " ");
+// let result = str.replace(pattern, " ");
 
-console.log(result);
+// console.log(result);
+
+
+/////error catching//////
+//try
+//First, you specify the code that you think might throw an exception within the try block.
+//If an exception occurs in this section of code, control is automatically passed to the corresponding catch block.
+//catch
+//If the try block throws an exception, catch steps in with an alternative set of code. 
+//It has one parameter: the error object. Although it is optional, you are not handling the error if you do not catch the error.
+

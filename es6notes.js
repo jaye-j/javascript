@@ -220,40 +220,202 @@ let a = 4;
 ////(condition)? (true block): (else block)
 
 // (a == 4)? console.log(`a is equal to 4`) : console.log(`a isnt equal to 4`); //a is equal to 4
-class Parent {
+// class Parent {
 
-    parentGreeting(){
-        console.log(`Im the parent.`);
-    };
+//     parentGreeting(){
+//         console.log(`Im the parent.`);
+//     };
 
-};
+// };
 
-class Person extends Parent{
+// class Person extends Parent{
 
-    constructor(fname, lname, age){
-        super();
-        this.fname = fname;
-        this.lname = lname;
-        this.age = age;
-        this.count = 0;
-    };
+//     constructor(fname, lname, age){
+//         super();
+//         this.fname = fname;
+//         this.lname = lname;
+//         this.age = age;
+//         this.count = 0;
+//     };
 
-    greeting = () =>{
-        console.log(`Hello ${this.fname} ${this.lname}!`);
+//     greeting = () =>{
+//         console.log(`Hello ${this.fname} ${this.lname}!`);
 
-        this.count = this.count + 1;
-    };
-    printCount = () =>{
-        console.log(this.count);
-    };
-};
+//         this.count = this.count + 1;
+//     };
+//     printCount = () =>{
+//         console.log(this.count);
+//     };
+// };
 
-let jaye = new Person("Jaye", "Jensen", 21);
+// let jaye = new Person("Jaye", "Jensen", 21);
 
-console.log(jaye);
+// console.log(jaye);
 
-jaye.greeting();
+// jaye.greeting();
 
-jaye.printCount();
+// jaye.printCount();
 
-jaye.parentGreeting();
+// jaye.parentGreeting();
+
+// class Character{
+
+//     constructor(health, power){
+//         this.health = health;
+//         this.power = power;
+//     }
+
+//     attack = (enemy) =>{
+
+//         enemy.health -= this.power;
+//     }
+
+//     print = () =>{
+//         console.log(`The health of ${this.name} is ${this.health} and power is ${this.power}.`);
+//     }
+// }
+
+// class Hero extends Character{
+
+//     constructor(health, power){
+//         super(health, power);
+//         this.name = "Hero";
+//     }
+// }
+
+// class Goblin extends Character{
+    
+//     constructor(health, power){
+//         super(health, power);
+//         this.name = "Goblin";
+//     }
+// }
+
+// let hero = new Hero(10, 4);
+// let goblin = new Goblin(8, 5);
+
+// goblin.print();
+
+// hero.attack(goblin);
+
+// goblin.print();
+
+// class Todos{
+
+//     constructor(description){
+//         this.description = description;
+//     }
+// }
+
+// class TodosManager{
+
+//     constructor(){
+
+//         this.todoArray = [];
+//     }
+
+//     addTodo = (description) => {
+
+//         let todo = new Todos(description);
+
+//         this.todoArray.push(todo);
+//     }
+
+//     displayTodos = () => {
+
+//         //DOM logic to display todos on page
+//     }
+// }
+
+// let manager = new TodosManager();
+
+// manager.addTodo(description);
+
+
+//////Regular expressions/////////
+
+// let regex = new RegExp("digital crafts");
+
+// let regex2 = /digital crafts/;
+
+// let someString = "asdasd digital crafts sfsdfafasadas ";
+
+// let result = regex.test(someString);
+
+// console.log(result);
+
+
+// let pattern = /jaye/ig;
+
+// let someString = "dasdhaslnoafaksdnpa jaYe asdba;sdjobasdbhajsjayevdla;";
+
+// let result = pattern.test(someString);
+
+// console.log(result);
+
+// let array = someString.match(pattern);
+
+// let array2 = someString.replace(pattern, "Jensen");
+
+// console.log(array);
+
+// console.log(array2);
+
+// let pattern = /Batman|Tina Fey/ig;
+
+// let string = "batman is really cool, but not as cool as tina fey."
+
+// let result = string.match(pattern);
+
+// console.log(result);
+
+
+//333-333-3333
+
+// let phonePattern = /(\d\d\d)-(\d\d\d)-(\d\d\d\d)/;
+
+// let string = "aklsjdajn 333-333-3333 asldhdsa 432-345-6432 asasd";
+
+// let result = string.match(phonePattern);
+
+// console.log(result);
+
+
+// let pattern = /Bat(man|mobile|copter|bat)/gi;
+// let str = "Batman lost a wheel Batmobile";
+// let result = str.match(pattern);
+
+// console.log(result);
+
+// let pattern = /(\()?\d\d\d(\))?(-)?(.)?\d\d\d(-)?(.)?\d\d\d\d/g;
+
+// let str = "this is a phone num: (333)333-3333";
+
+// let result = str.match(pattern);
+
+// console.log(result);
+
+// let pattern = /Bat(wo)*man/g;
+
+// let string = " Batwoman ajkdnla Batman asld Batwowowowowowowoman"
+
+// let result = string.match(pattern);
+
+// console.log(result);
+
+// let pattern = /a{2,5}/;
+
+// let str = "b aa brand new world"
+
+// console.log(pattern.test(str));
+
+// let result = str.match(pattern);
+
+// // console.log(result);
+
+let pattern = /\s\s/g;
+let str = "this is a veryyyyyyy long day";
+
+let result = str.replace(pattern, " ");
+
+console.log(result);

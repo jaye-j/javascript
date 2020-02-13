@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+    <!-- <form action="" method="">
+
+            <input type="text" name="lastname"><br>Last name:<br>
+            <input type="radio">
+            <input type="checkbox">
+            <input type="password">
+
+            <button type="submit">Done</button>
+
+    </form> -->
+
+    <!-- POST method does not display the submitted form data in the page address field. -->
+    <!-- Never use GET method to send sensitive data -->
+    <!-- <form action="/action_page.js">
+        <fieldset>
+          <legend>Personal information:</legend>
+          First name:<br>
+          <input type="text" name="firstname" value="Mickey"><br>
+          Last name:<br>
+          <input type="text" name="lastname" value="Mouse"><br><br>
+          <input type="submit" value="Submit">
+        </fieldset>
+      </form>
+    <form>
+            <label for="choose">Would you prefer a banana or cherry?</label>
+            <input id="choose" name="i_like" required>
+            <button>Submit</button>
+    </form> -->
+    <!-- <form action="">
+
+        <fieldset>
+            <legend>firstname</legend>
+            <input type="text" placeholder="firstname" required minlength="2" maxlength="15">
+        </fieldset>
+        <fieldset>
+            <legend>lastname</legend>
+            <input type="text" placeholder="lastname" required minlength="2" maxlength="15">
+        </fieldset>
+
+        <input type="submit">
+    </form>
+    <form>
+        <div>
+            <label for="choose">Would you prefer a banana or a cherry?</label>
+            <input id="choose" name="i_like" required minlength="6" maxlength="6">
+        </div>
+        <div>
+            <label for="number">How many would you like?</label>
+            <input type="number" id="number" name="amount" required value="1" min="1" max="10">
+        </div>
+        <div>
+            <button>Submit</button>
+        </div>
+    </form> -->
+
+    <!-- <feildset>
+        <legend>html or css</legend>
+        <input type="text" required pattern="">
+    </feildset>
+    <input type="submit"> -->
+    <!-- <fieldset>
+        <legend>email</legend>
+        <input type="email" id="t2" name="email" required>
+
+        <input type="submit">
+    </fieldset> -->
+
+    <!-- <form action="" onsubmit="myFunction()">
+        Enter name: 
+        <input type="text">
+    </form>
+    <input type="submit"> -->
+
+    <form id="myForm">
+            Enter name: 
+            <input name="brand" type="text" value="volvo">
+            <input name="brand" type="radio" value="saab">
+            <input name="brand" type="radio" value="bmw">
+
+        <input type="submit" value="Submit">
+
+    </form>
+
+
+
+        <script   src="http://code.jquery.com/jquery-3.4.1.min.js"   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="   crossorigin="anonymous"></script>
+
+        <script>
+            $(()=>{
+                // $('#myForm').submit(function(){
+                // e.preventDefault();
+                // console.log($('input:checked').val());//either volvo, saab, or bmw
+                // });
+
+                
+
+            });
+        </script>
+</body>
+</html>

@@ -7,15 +7,51 @@
     <title>Document</title>
 </head>
 <body>
-    
 
 
 
 
+        <script>
+        
+        ///a0e12afd98ccbd2fe8caf3b41b17bd0f
 
+        let url = `https://api.openweathermap.org/data/2.5/weather?q=Houston&APPID=a0e12afd98ccbd2fe8caf3b41b17bd0f`
 
+        fetch(url)
+        .then((response)=>{
+            return response.json();
+        })
+        .then((weatherObj)=>{
+            let K = weatherObj.main.temp;
+            let C = K - 273.15;
+            let F = C * 1.8 + 32;
+            console.log(K);
+            console.log(C);
+            console.log(F);
 
+            let body = document.querySelector('body');
+            body.innerHTML = F.toString();
+        })
+        
+        
+        </script>
+        
+        <!-- <script src="http://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+        <script>
+        
+        $(()=>{
 
-        <script src="http://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+            $.get("https://jsonplaceholder.typicode.com/comments")
+            .done((response)=>{
+                console.log(response);
+
+                $('ul')
+            })
+            .then((error)=>{
+                console.log(error);
+            })
+        })
+        
+        </script> -->
 </body>
 </html>

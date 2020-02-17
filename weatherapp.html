@@ -4,44 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Weather Search</title>
+
+    <style>
+    h1{
+        font-size: 45px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 10px;
+        border: solid black 3px;
+        padding: 5px;
+        cursor: default;
+    }
+    .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .button{
+        border: black 1px solid;
+        font-size: 25px;
+        padding: 5px;
+        background-color: whitesmoke;
+        cursor: pointer;
+    }
+    .cityinput{
+        font-size: 25px;
+        margin: 5px;
+        cursor: text;
+    }
+    
+    </style>
 </head>
 <body>
 
     <div class="container">
         <div id="form" class="form">
-            <h2>Weather Search</h2>
+            <h1>Weather Search</h1>
             <div class="container">
-                <input type="text" id="username" placeholder="Enter a city.">
-                <submit>Enter</submit>
+                <input class="cityinput" type="text" id="cityName" placeholder="Enter a city.">
+                <submit id="button" class="button">Enter</submit>
             </div>
         </div>
     </div>
 
 
-        <script>
-        
-        ///a0e12afd98ccbd2fe8caf3b41b17bd0f
-
-        let url = `https://api.openweathermap.org/data/2.5/weather?q=Houston&APPID=a0e12afd98ccbd2fe8caf3b41b17bd0f`
-
-        fetch(url)
-        .then((response)=>{
-            return response.json();
-        })
-        .then((weatherObj)=>{
-            let K = weatherObj.main.temp;
-            let C = K - 273.15;
-            let F = C * 1.8 + 32;
-            console.log(K);
-            console.log(C);
-            console.log(F);
-
-            let body = document.querySelector('body');
-            // body.innerHTML = F.toFixed(2);
-        })
-        
-        
-        </script>
+        <script src="weatherapp.js"></script>
 </body>
 </html>

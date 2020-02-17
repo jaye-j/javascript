@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+    body{
+        background-image: url('gotcup.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .title{
+        display: flex;
+        justify-content: center;
+        align-items: top;
+        color: white;
+        font-size: 40px;
+        text-decoration: underline;
+    }
+    .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        border: white solid 5px;
+        width: 800px;
+        height: auto;
+    }
+    .charlistclass{
+        color: white;
+        font-size: 25px;
+        padding: 10px;
+    }
+    </style>
+</head>
+<body>
+    <div id="container" class="container">
+        <h1 id="title" class="title">Game of Thrones: Characters</h1>
+        <ul class="charlistclass" id="charlist"></ul>
+    </div>
+
+
+
+
+    <script src="GOT.js"></script>
+</body>
+</html>

@@ -7,20 +7,30 @@
     <title>Weather Search</title>
 
     <style>
-    h1{
-        font-size: 45px;
+    body{
         display: flex;
         justify-content: center;
         align-items: center;
+        min-height: 100vh;
+        margin: 0;
+    }
+    .container1{
+        border: solid black 10px;
+        padding: 15px;
+        box-shadow: 0 2px 40px black;
+    }
+    .info{
+        height: auto;
+        width: auto;
+        border: solid black 1px;
+        text-align: center;
+    }
+    h1{
+        font-size: 45px;
         margin: 10px;
         border: solid black 3px;
         padding: 5px;
         cursor: default;
-    }
-    .container{
-        display: flex;
-        justify-content: center;
-        align-items: center;
     }
     .button{
         border: black 1px solid;
@@ -33,18 +43,31 @@
         font-size: 25px;
         margin: 5px;
         cursor: text;
+        border: solid 1px black;
+        padding: 5px;
+    }
+    .temp{
+        font-size: 100px;
+        color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     
     </style>
 </head>
 <body>
 
-    <div class="container">
+    <div class="container1">
         <div id="form" class="form">
-            <h1>Weather Search</h1>
-            <div class="container">
-                <input class="cityinput" type="text" id="cityName" placeholder="Enter a city.">
+            <h1>Weather Search.</h1>
+            <div class="container2">
+                <input class="cityinput" type="text" id="cityname" placeholder="Enter a city.">
                 <submit id="button" class="button">Enter</submit>
+            </div>
+            <div class="info" id="info">
+                <h2 id="usercity" class="usercity"></h2>
+                <div id="temp" class="temp"></div>
             </div>
         </div>
     </div>

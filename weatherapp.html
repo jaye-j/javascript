@@ -8,7 +8,15 @@
 </head>
 <body>
 
-
+    <div class="container">
+        <div id="form" class="form">
+            <h2>Weather Search</h2>
+            <div class="container">
+                <input type="text" id="username" placeholder="Enter a city.">
+                <submit>Enter</submit>
+            </div>
+        </div>
+    </div>
 
 
         <script>
@@ -30,28 +38,10 @@
             console.log(F);
 
             let body = document.querySelector('body');
-            body.innerHTML = F.toString();
+            // body.innerHTML = F.toFixed(2);
         })
         
         
         </script>
-        
-        <!-- <script src="http://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-        <script>
-        
-        $(()=>{
-
-            $.get("https://jsonplaceholder.typicode.com/comments")
-            .done((response)=>{
-                console.log(response);
-
-                $('ul')
-            })
-            .then((error)=>{
-                console.log(error);
-            })
-        })
-        
-        </script> -->
 </body>
 </html>

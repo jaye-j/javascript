@@ -1,0 +1,53 @@
+
+
+
+body{
+    background-color: blue;
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    font-size: 50px;
+}
+
+.bigbox{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.namebox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: black solid 5px;
+    height: auto;
+    width: auto;
+    color: white;
+    font-size: 25px;
+}
+
+.housebox{
+    display: flex;
+    flex-direction: column;
+    border: black solid 5px;
+    border-left: white solid .5px;
+    height: auto;
+    width: 500px;
+    color: white;
+    font-size: 25px;
+}
+
+li{
+    padding: 10px;
+}
+
+button{
+    font-size: 20px;
+    border: solid 3px black;
+    background-color: greenyellow;
+    cursor: pointer;
+}

@@ -1,41 +1,106 @@
+let charlist = document.querySelector('#names');
+let houselist = document.querySelector('#houses');
+// let houselist = document.querySelector('#houses');
 
-let charlist = document.querySelector('#charlist');
-// let houselist = document.querySelector('#houselist')
+let infoArr = [];
 
+for(let i = 0; i <= 64; i++){
+    fetch(
+        `https://www.anapioficeandfire.com/api/characters?page=${i}&pageSize=50`
+        )
 
-fetch(`https://www.anapioficeandfire.com/api/characters?pagesize=30`)
+    .then((response)=>{
 
-.then((response)=>{
-    return response.json();
-})
-.then((charArr)=>{
-    let char = charArr.name
-    console.log(charArr)
-    let characters = charArr.map((character) => {
-        console.log(character.name)
-        // if(character.allegiances){
-        //     fetch(`${character.allegiances}`)
-        // .then((response)=>{
-        //     return response.json();
-        // })
-        // .then((houseArr)=>{
-        //     console.log("HEY")
-        //     console.log(houseArr.name)
-        //     console.log("hey2");
-        //     let house = houseArr.name
-        //     console.log(house) //logs the allegiance name
-
-        //     if (!houseArr.name){
-        //         return `<li>none</li>`
-        //     }
-        //     return `<li>Name: ${houseArr.name}</li>`
-        // })
-        // }
-        if (!character.name){
-            return `<li>Name: ${character.aliases}</li>`
-        }
-        return `<li>Name: ${character.name}</li>`
+        return response.json();
     })
-    charlist.innerHTML = characters.join(" ")
-    // houselist.innerHTML = characters.join(" ")
-})
+
+    .then((characters)=>{
+
+        infoArr = [...infoArr, ...characters];
+    })
+    .then(()=>{
+    // console.log(infoArr);
+        if (i == 64){
+            for(let i = 0; i < infoArr.length; i++){
+                if(infoArr[i].allegiances){
+                    fetch(`${infoArr[i].allegiances}`)
+                    .then((response)=>{
+                        
+                        return response.json()
+                        
+                    .then((houseArr) =>{
+                        // console.log(houseArr)
+                        let house = houseArr.name
+                        // console.log(house)
+
+                        let button = document.createElement('button')
+                        button.setAttribute('dataHouse', houseArr.url)
+
+                        button.innerHTML = house
+                        button.addEventListener('click', (event)=>{
+                            console.log(event.target.getAttribute('dataHouse'))
+
+
+                            fetch(event.target.getAttribute('dataHouse'))
+                            .then((response)=>{
+                                return response.json()
+                            })
+                            .then((obj)=>{
+
+                                console.log(obj);
+                                window.alert("Name: " + obj.name + " – " + "Sworn members: " + obj.swornMembers.length)
+                            })
+                        })
+
+                        if (!infoArr[i].name && !infoArr[i].aliases){
+                            let listchar = document.createElement('li');
+                            listchar.innerHTML = `Unknown – `
+                            listchar.append(button)
+                            houselist.append(listchar);
+                        }
+                        else if (!infoArr[i].name){
+                            let listchar = document.createElement('li');
+                            listchar.innerHTML = `${infoArr[i].aliases} – `
+                            listchar.append(button);
+                            houselist.append(listchar);
+                        }else{
+                            let listchar = document.createElement('li');
+                            listchar.innerHTML = `${infoArr[i].name} – `;
+                            listchar.append(button)
+                            houselist.append(listchar);
+                        }
+                    })
+                    })
+                }
+                if (!infoArr[i].name && !infoArr[i].aliases){
+                    let listchar = document.createElement('li');
+                    listchar.innerHTML = "Unknown"
+                    charlist.append(listchar);
+                }
+                else if (!infoArr[i].name){
+                    let listchar = document.createElement('li');
+                    listchar.innerHTML = infoArr[i].aliases;
+                    charlist.append(listchar);
+                }else{
+                    let listchar = document.createElement('li');
+                    listchar.innerHTML = infoArr[i].name;
+                    charlist.append(listchar);
+                }
+            }
+        }
+    })
+}
+
+
+// document.querySelector('button').addEventListener('onclick',(event)=>{
+//     fetch(event.target.dataHouseUrl)
+// })
+
+// let elementArr = document.querySelectorAll('button')
+                        
+// elementArr.forEach((button) => {
+//     button.addEventListener('click',(event)=>{
+//         console.log(event.target)
+//         // fetch(event.target.dataHouseUrl)
+//     })
+// })

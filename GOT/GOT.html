@@ -5,64 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-
-    <style>
-    body{
-        background-image: url('gotcup.jpg');
-        background-size: cover;
-        background-repeat: no-repeat;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .title{
-        display: flex;
-        justify-content: center;
-        align-items: top;
-        color: white;
-        font-size: 40px;
-        text-decoration: underline;
-    }
-    .container{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        border: white solid 5px;
-        width: 1200px;
-        height: auto;
-    }
-    .charlistclass{
-        display: flex;
-        justify-content: left;
-        align-self: left;
-        flex-direction: column;
-        color: white;
-        font-size: 25px;
-        padding: 10px;
-        width: 500px;
-    }
-    .houselistclass{
-        display: flex;
-        justify-content: right;
-        align-self: right;
-        flex-direction: column;
-        color: blue;
-        font-size: 25px;
-        padding: 10px;
-        width: 500px;
-    }
-    </style>
+    <link rel="stylesheet" href="GOT.css">
 </head>
 <body>
     <div id="container" class="container">
-        <h1 id="title" class="title">Game of Thrones: Characters</h1>
-        <ul class="charlistclass" id="charlist"></ul>
-        <ul class="houselistclass" id="houselist">
-            <li>asdasd</li>
-        </ul>
-    </div>
 
+
+        <h1 class="title">GAME OF THRONES</h1>
+        <div class="bigbox">
+            <div class="namebox" id="nameboxid">
+                <ul id="names"></ul>
+            </div>
+            <div class="housebox" id="houseboxid">
+                <ul id="houses"></ul>
+            </div>
+        </div>
+
+    </div>
 
 
 

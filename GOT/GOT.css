@@ -24,6 +24,7 @@ body{
     justify-content: center;
     align-items: center;
     border: black solid 5px;
+    border-right: black solid 2px;
     height: auto;
     width: auto;
     color: white;
@@ -33,10 +34,12 @@ body{
 .housebox{
     display: flex;
     flex-direction: column;
+    justify-content: top;
+    align-items: center;
     border: black solid 5px;
-    border-left: white solid .5px;
+    border-left: black solid 3px;
     height: auto;
-    width: 500px;
+    width: auto;
     color: white;
     font-size: 25px;
 }

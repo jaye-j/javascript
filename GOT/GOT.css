@@ -1,15 +1,68 @@
-
-
-
-body{
-    background-color: blue;
+@import url('https://fonts.googleapis.com/css?family=Cinzel+Decorative&display=swap');
+*{
+    font-family: 'Cinzel Decorative', cursive;
 }
+
+html { 
+    background: url(backgroundimage.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
 
 .title{
     display: flex;
     justify-content: center;
     flex-direction: row;
-    font-size: 50px;
+    font-size: 150px;
+    text-decoration: underline;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: gold;
+    margin: 5px;
+}
+.subtitles{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.without{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: black solid 5px;
+    border-right: black solid 2px;
+    height: auto;
+    width: 405px;
+    padding: 10px;
+    color: white;
+    font-size: 40px;
+    -webkit-text-stroke-width: .3px;
+    -webkit-text-stroke-color: black;
+    -moz-box-shadow: 5px 5px 5px rgba(68,68,68,0.6);
+	-webkit-box-shadow: 5px 5px 5px rgba(68,68,68,0.6);
+	box-shadow: 5px 5px 5px rgba(68,68,68,0.6);
+
+}
+.with{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: black solid 5px;
+    border-left: black solid 2px;
+    height: auto;
+    width: 850px;
+    padding: 10px;
+    color: white;
+    font-size: 40px;
+    -webkit-text-stroke-width: .3px;
+    -webkit-text-stroke-color: black;
+    -moz-box-shadow: 5px 5px 5px rgba(68,68,68,0.6);
+	-webkit-box-shadow: 5px 5px 5px rgba(68,68,68,0.6);
+	box-shadow: 5px 5px 5px rgba(68,68,68,0.6);
+
 }
 
 .bigbox{
@@ -29,6 +82,10 @@ body{
     width: auto;
     color: white;
     font-size: 25px;
+    -moz-box-shadow: 5px 5px 5px rgba(68,68,68,0.6);
+	-webkit-box-shadow: 5px 5px 5px rgba(68,68,68,0.6);
+	box-shadow: 5px 5px 5px rgba(68,68,68,0.6);
+
 }
 
 .housebox{
@@ -42,6 +99,10 @@ body{
     width: auto;
     color: white;
     font-size: 25px;
+    -moz-box-shadow: 5px 5px 5px rgba(68,68,68,0.6);
+	-webkit-box-shadow: 5px 5px 5px rgba(68,68,68,0.6);
+	box-shadow: 5px 5px 5px rgba(68,68,68,0.6);
+
 }
 
 li{
@@ -51,6 +112,7 @@ li{
 button{
     font-size: 20px;
     border: solid 3px black;
-    background-color: greenyellow;
+    background-color: gold;
+    border-radius: 15px;
     cursor: pointer;
 }
